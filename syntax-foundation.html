@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SYNTAX FOUNDATION</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                font: 15px/1 sans-serif;
+                margin: 0;
+            }
+
+            /*
+RESPONSIVE CSS3 SLIDE CAROUSEL GALLERY
+http://stackoverflow.com/a/34696029/383904
+*/
+
+            .CSSgal {
+                position: relative;
+                overflow: hidden;
+                height: 100%; /* Or set a fixed height */
+            }
+
+                /* SLIDER */
+                .CSSgal .slider {
+                    height: 100%;
+                    white-space: nowrap;
+                    font-size: 0;
+                    transition: 0.8s;
+                }
+
+                    /* SLIDES */
+                    .CSSgal .slider > * {
+                        font-size: 1rem;
+                        display: inline-block;
+                        vertical-align: top;
+                        height: 100%;
+                        width: 100%;
+                        background: none 50% no-repeat;
+                        background-size: cover;
+                    }
+
+                /* PREV/NEXT, CONTAINERS & ANCHORS */
+                .CSSgal .prevNext {
+                    position: relative;
+                    z-index: 1;
+                    top: 50%;
+                    width: 100%;
+                    height: 0;
+                }
+
+                    .CSSgal .prevNext > div + div {
+                        visibility: hidden; /* Hide all but first P/N container */
+                    }
+
+                    .CSSgal .prevNext a {
+                        background: #fff;
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        opacity: 0.7;
+                        text-decoration: none;
+                        -webkit-transform: translateY( -50% );
+                        transform: translateY( -50% );
+                    }
+
+                        .CSSgal .prevNext a:hover {
+                            opacity: 1;
+                        }
+
+                        .CSSgal .prevNext a + a {
+                            right: 0px;
+                        }
+
+                /* NAVIGATION */
+                .CSSgal .bullets {
+                    position: absolute;
+                    z-index: 2;
+                    bottom: 0;
+                    padding: 10px 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                    .CSSgal .bullets > a {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-decoration: none;
+                        text-align: center;
+                        border-radius: 50%;
+                        background: rgba(255,255,255,1);
+                    }
+
+                        .CSSgal .bullets > a + a {
+                            background: rgba(255,255,255,0.5); /* Dim all but first */
+                        }
+
+                        .CSSgal .bullets > a:hover {
+                            background: rgba(0,255,255,0.9);
+                        }
+
+                /* ACTIVE NAVIGATION ANCHOR */
+                .CSSgal > s:target ~ .bullets > * {
+                    background: rgba(255,255,255,0.5);
+                }
+
+            #s1:target ~ .bullets > *:nth-child(1) {
+                background: rgba(255,255,255, 1);
+            }
+
+            #s2:target ~ .bullets > *:nth-child(2) {
+                background: rgba(255,255,255, 1);
+            }
+
+            #s3:target ~ .bullets > *:nth-child(3) {
+                background: rgba(255,255,255, 1);
+            }
+
+            #s4:target ~ .bullets > *:nth-child(4) {
+                background: rgba(255,255,255, 1);
+            }
+            #s5:target ~ .bullets > *:nth-child(4) {
+                background: rgba(255,255,255, 1);
+            }
+
+
+
+            /* PREV/NEXT CONTAINERS VISIBILITY */
+            .CSSgal > s:target ~ .prevNext > * {
+                visibility: hidden;
+            }
+
+            #s1:target ~ .prevNext > *:nth-child(1) {
+                visibility: visible;
+            }
+
+            #s2:target ~ .prevNext > *:nth-child(2) {
+                visibility: visible;
+            }
+
+            #s3:target ~ .prevNext > *:nth-child(3) {
+                visibility: visible;
+            }
+
+            #s4:target ~ .prevNext > *:nth-child(4) {
+                visibility: visible;
+            }
+
+            #s5:target ~ .prevNext > *:nth-child(4) {
+                visibility: visible;
+            }
+                /* SLIDER ANIMATION POSITIONS */
+                #s1:target ~ .slider {
+                transform: translateX( 0%);
+                -webkit-transform: translateX( 0%);
+            }
+
+            #s2:target ~ .slider {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+
+            #s3:target ~ .slider {
+                transform: translateX(-200%);
+                -webkit-transform: translateX(-200%);
+            }
+
+            #s4:target ~ .slider {
+                transform: translateX(-300%);
+                -webkit-transform: translateX(-300%);
+            }
+
+            #s5:target ~ .slider {
+                transform: translateX(-300%);
+                -webkit-transform: translateX(-300%);
+            }
+		</style>
+	</head>
+	<body class="is-preload no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<a href="index.html"><img src="images\SYNTAX.png"></a>
+							</div>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="our-strategy.html">OUR STRATEGY </a></li>
+								<li><a href="our-members.html">OUR MEMBERS </a></li>
+							
+                                <li class="current"><a href="syntax-foundation.html">SYNTAX FOUNDATION</a></li>
+							</ul>
+						</nav>
+
+				</header>
+			</div>
+			</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+							<article>
+
+                                <h2>DEDICATED TO MAKING THE WORLD A BETTER PLACE</h2>
+
+								<p>The Syntax Housing Solutions, founded in 2023 by Syntax, is an independent non-profit organization dedicated to promoting the worldwide movement for sustainable design and construction. Its purpose is to support architects, designers, engineers, and urban planners who aspire to improve the way the world creates.</p>
+
+
+								<h3>VISION</h3>
+
+								<p>To reimagine the future of living spaces via innovative engineering and architectural collaborations, fostering sustainable communities and inspiring a higher quality of life for everybody.</p>
+
+
+								<h3>MISSION</h3>
+
+								<p>At Syntax, our mission is to combine the creative ingenuity of architects with the technical expertise of engineers to create housing solutions that transcend traditional boundaries. We are committed to designing and developing spaces that seamlessly integrate aesthetic appeal, functionality, and sustainability.</p>
+                                <p>Our objective is to create a better future by providing housing solutions that break down traditional barriers. We design homes that incorporate eco-friendly materials, energy-efficient technology, and thoughtful space management. We are change architects, imbuing each construction with a harmonic balance of form and function that benefits both the environment and its people.</p>
+							
+                                <h2>Committed to Enriching the Global Community: Leading the Way in Innovative Housing Engineering and Architecture</h2>
+                                <p>At our heart, we are motivated by an unshakable commitment to improve the world in which we live. Our company is a beacon of purpose, aiming to revolutionize housing solutions via the collaboration of cutting-edge engineering and creative architecture. We are trailblazers in transforming urban environments and redefining the entire concept of home, thanks to our unwavering commitment to sustainability, utility, and beauty.</p>
+                                <p>
+                                    Our projects embrace the spirit of metamorphosis, from huge metropolitan complexes that optimize space in metropolises to quiet suburban enclaves that effortlessly integrate with nature. Every plan reflects our desire to build living places that inspire and uplift while also promoting a sense of community and well-being.
+
+                                    As we embark on this adventure, we welcome you to see our dedication manifest itself in every brick laid, every beam built, and every space imagined. We are not only building houses together, but we are also weaving ambitions and aspirations into the very fabric of our towns. Join us in creating a world where architecture and engineering collaborate to construct a more sustainable, inclusive, and undoubtedly better future for everybody.
+                                </p>
+							</article>
+
+						</div>
+					</div>
+				</div>
+
+                <div class="CSSgal">
+
+                    <!-- Don't wrap targets in parent -->
+                    <s id="s1"></s>
+                    <s id="s2"></s>
+                    <s id="s3"></s>
+                    <s id="s4"></s>
+                    <s id="s5"></s>
+
+
+                    <div class="slider">
+                        <div style="background-image:url('images/found7.jpg');"></div>
+                        <div style="background-image:url('images/found10.jpg');"></div>
+                        <div style="background-image:url('images/found9.jpg');"></div>
+                        <div style="background-image:url('images/found4.jpg');"></div>
+                        <div style="background-image:url('images/foundation5.jpg');"></div>
+                    </div>
+
+                    <div class="prevNext">
+                        <div><a href="#s4">4</a><a href="#s2">5</a></div>
+                        <div><a href="#s1">1</a><a href="#s3">2</a></div>
+                        <div><a href="#s2">2</a><a href="#s4">3</a></div>
+                        <div><a href="#s3">4</a><a href="#s5">5</a></div>
+                        <div><a href="#s5">5</a><a href="#s1">4</a></div>
+                    </div>
+
+                    <div class="bullets">
+                        <a href="#s1">1</a>
+                        <a href="#s2">2</a>
+                        <a href="#s3">3</a>
+                        <a href="#s4">4</a>
+                        <a href="#s5">5</a>
+                    </div>
+
+                </div>
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>SYNTAX</h3>
+										<p>2600 BAGUIO, CITY<br />
+										NORTH CAMBRIDGE<br />
+										0977 404 1236</p>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>SLU</h3>
+										<p>2600 BAGUIO, CITY<br />
+										NORTH CAMBRIDGE<br />
+										0977 404 1236</p>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>HOUSING SOLUTIONS</h3>
+										<p>2600 BAGUIO, CITY<br />
+										NORTH CAMBRIDGE<br />
+										0977 404 1236</p>
+									
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Contact -->
+									<section class="widget contact">
+										<h3>CONTACT US</h3>
+										<p>2600 BAGUIO, CITY<br />
+										NORTH CAMBRIDGE<br />
+										0977 404 1236</p>
+									</section>
+
+							</div>
+						</div>
+					</footer>
+
+	
+
+	</body>
+</html>
